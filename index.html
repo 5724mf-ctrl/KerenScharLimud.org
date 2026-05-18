@@ -5,75 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Keren Schar Limud</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
   <style>
-    body {
-      margin: 0;
-      font-family: "Source Sans 3", sans-serif;
-      background: #F8F4EE;
-      color: #1E2D3D;
-      line-height: 1.6;
+    body{
+      margin:0;
+      font-family:Inter, sans-serif;
+      background:#F8F4EE;
+      color:#1E2D3D;
     }
 
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 60px 20px;
+    .wrap{
+      max-width:1100px;
+      margin:auto;
+      padding:60px 20px;
     }
 
-    h1, h2 {
-      font-family: "Playfair Display", serif;
-      margin: 0 0 20px;
+    h1,h2{
+      font-family:"Playfair Display", serif;
+      margin:0 0 20px;
     }
 
-    h1 {
-      font-size: 44px;
+    h1{font-size:46px; line-height:1.1;}
+    h2{font-size:32px;}
+
+    p{
+      font-size:18px;
+      color:#46515C;
+      line-height:1.6;
     }
 
-    h2 {
-      font-size: 32px;
+    .btn{
+      display:inline-block;
+      background:#2F5D8A;
+      color:#fff;
+      padding:14px 22px;
+      border-radius:8px;
+      text-decoration:none;
+      margin-top:20px;
     }
 
-    p {
-      font-size: 18px;
-      color: #46515C;
+    .btn:hover{background:#264D73;}
+
+    .section{padding:80px 0;}
+
+    .card{
+      background:#fff;
+      padding:24px;
+      border-radius:10px;
+      margin-top:20px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.05);
     }
 
-    .btn {
-      display: inline-block;
-      background: #2F5D8A;
-      color: white;
-      padding: 14px 22px;
-      border-radius: 6px;
-      text-decoration: none;
-      margin-top: 20px;
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:20px;
     }
 
-    .btn:hover {
-      background: #264D73;
+    @media(max-width:768px){
+      h1{font-size:34px;}
+      .grid{grid-template-columns:1fr;}
     }
 
-    .section {
-      padding: 80px 0;
+    .hero{
+      text-align:center;
+      padding:100px 20px;
+      background:#F3EFE7;
     }
 
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      margin-top: 20px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    @media (max-width: 768px) {
-      h1 { font-size: 32px; }
-      .grid { grid-template-columns: 1fr; }
+    .hero img{
+      width:100%;
+      max-width:900px;
+      border-radius:12px;
+      margin-bottom:30px;
     }
   </style>
 </head>
@@ -81,49 +86,50 @@
 <body>
 
   <!-- HERO -->
-  <div class="container section">
+  <div class="hero">
+    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80">
+    
     <h1>So every child can learn with dignity.</h1>
-    <p>
-      We help families afford tuition, strengthen schools, and honor teachers—quietly and directly.
-    </p>
+    <p>We help families afford tuition, strengthen schools, and support teachers—quietly and directly.</p>
 
     <a class="btn" href="#">Give with Confidence</a>
   </div>
 
   <!-- MISSION -->
-  <div class="container section">
+  <div class="wrap section">
     <h2>What we do</h2>
     <p>
-      We provide tuition assistance so children learn today, families breathe easier, schools stay healthy, and teachers are valued.
+      We provide tuition assistance so children stay in school, families feel relief,
+      schools stay stable, and teachers are supported.
     </p>
   </div>
 
   <!-- IMPACT -->
-  <div class="container section">
-    <h2>The difference you make</h2>
+  <div class="wrap section">
+    <h2>Your impact</h2>
 
     <div class="grid">
       <div class="card">
-        <h3>100%</h3>
-        <p>of gifts go to families</p>
+        <h2>100%</h2>
+        <p>of donations go directly to families</p>
       </div>
 
       <div class="card">
-        <h3>Schools</h3>
-        <p>supported through tuition stability</p>
+        <h2>Schools</h2>
+        <p>receive stable tuition support</p>
       </div>
 
       <div class="card">
-        <h3>Teachers</h3>
-        <p>supported with recognition & bonuses</p>
+        <h2>Teachers</h2>
+        <p>receive recognition & support</p>
       </div>
     </div>
   </div>
 
   <!-- CTA -->
-  <div class="container section">
-    <h2>Help a child stay in class this term.</h2>
-    <p>Secure, direct, and fully transparent.</p>
+  <div class="wrap section" style="text-align:center;">
+    <h2>Help a child stay in class today</h2>
+    <p>Secure, transparent, and direct support for families.</p>
     <a class="btn" href="#">Donate Now</a>
   </div>
 
